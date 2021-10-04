@@ -6,6 +6,7 @@ import { FormsModule } from '@angular/forms';
 import { MainPageComponent } from './main-page/main-page.component';
 import { PersonajesComponent } from './personajes/personajes.component';
 import { AgregarComponent } from './agregar/agregar.component';
+import { DBzService } from './services/dbz.service';
 
 @NgModule({
   declarations: [MainPageComponent, PersonajesComponent, AgregarComponent],
@@ -16,6 +17,9 @@ import { AgregarComponent } from './agregar/agregar.component';
     CommonModule,
     FormsModule
     
+  ],
+  providers:[
+    DBzService
   ]
 })
 export class DbzModule { }
